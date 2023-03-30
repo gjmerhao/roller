@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link href="../css/Page-style.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+	<form action="" method="" class="wrap" id="wrap">
+		<div class="logGet p-2">
+			<!-- 头部提示信息 -->
+			<div class="logD logDtip">
+				<p class="p1">登录</p>
+			</div>
+			<!-- 输入框 -->
+			<div class="lgD">
+				<img src="../image/logName.png" width="20" height="20" alt="" />
+				<input type="text" placeholder="输入学员手机号" id="s_phone"/>
+			</div>
+			<div class="lgD">
+				<img src="../image/logPwd.png" width="20" height="20" alt="" />
+				<input type="password" placeholder="输入用户密码"id="password" />
+			</div>
+			<div class="text-danger pl-5 fade"id="error">123131</div>
+			<div class="logC">
+				<a target="_self" id="login" class="btn">登 录</a>
+			</div>
+			<div class="row p-4">
+				<div class="col-7">
+					<p class="register text-left">创建一个账号? <a href="http://127.0.0.1:5500/logIn/register.html"class="font-weight-bold"> 立即注册</a></p>
+				</div>
+
+				<div class="col-5 text-right">
+					<a href="http://127.0.0.1:5500/logIn/forgetPW.html"class="logf font-weight-bold">忘记密码 ?</a>
+				</div>
+			</div>
+		</div>
+	</form>
+</body>
+<script src="../js/jquery-3.6.0.min.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/jQuery.MD5.js"></script>
+<script src="../js/skatingLogin.Ajax.js"></script>
+</html>

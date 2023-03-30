@@ -1,0 +1,122 @@
+
+@media print,
+screen and (min-width: 760px) {
+.topic {
+    padding: 32px 0;
+}
+}
+
+@media screen and (max-width:759px) {
+.topic {
+    padding: 21px
+}
+}
+
+.topic {
+position: relative;
+
+}
+
+.topic-inner {
+position: relative
+}
+
+@media print,
+screen and (min-width:760px) {
+.topic-inner {
+    padding-right: 40px;
+    padding-left: 40px
+}
+}
+
+@media print,
+screen and (min-width:980px) {
+.topic-inner {
+    max-width: 1200px;
+    height: 26px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 auto
+}
+}
+
+@media screen and (max-width:759px) {
+.topic-inner {
+    padding-right: 14px;
+    padding-left: 14px
+}
+}
+
+.topic-to-top {
+position: absolute;
+background-image: linear-gradient(180deg, #fff, #fff 1px, transparent 0, transparent 3px);
+background-repeat: repeat-y;
+background-position: 0 0;
+background-size: 1px 4px;
+top: 0;
+bottom: 0;
+margin: auto
+}
+
+@media print,
+screen and (min-width:980px) {
+.topic-to-top {
+    right: 40px;
+    width: 75px;
+    height: 49px;
+    margin-right: -26px
+}
+}
+
+@media screen and (min-width:760px) and (max-width:979px) {
+.topic-to-top {
+    right: 40px;
+    width: 54px;
+    height: 42px;
+    margin-right: -12px
+}
+}
+
+@media screen and (max-width:759px) {
+.topic-to-top {
+    right: 0;
+    width: 52px;
+    height: 37px
+}
+}
+
+.to-top-btn[data-v-3087922f] {
+display: block;
+height: 100%;
+cursor: pointer;
+color: #fff
+}
+
+html[data-device=desktop] .to-top-btn {
+-webkit-transition: opacity .15s linear;
+transition: opacity .15s linear
+}
+
+html[data-device=desktop] .to-top-btn:hover {
+opacity: .7
+}
+
+.to-top-btn svg {
+fill: #fff;
+display: block;
+height: 100%;
+margin: 0 auto
+}
+
+@media print,
+screen and (min-width:980px) {
+.to-top-btn svg {
+    width: 35px
+}
+}
+
+@media screen and (max-width:979px) {
+.to-top-btn svg {
+    width: 26px
+}
+}

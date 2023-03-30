@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>忘记密码</title>
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+</head>
+<style type="text/css">
+	#bgIMGgorgerPW {
+		background-image: url(../image/轮滑背景4.jpg);
+		background-repeat: no-repeat;
+		background-position: center center;
+		position: relative;
+		background-size: cover;
+		-moz-background-size: cover;
+		-webkit-background-size: cove;
+
+	}
+
+	.inputRegister {
+		width: 100%;
+		border-radius: 8px;
+		padding: .375rem .75rem;
+
+	}
+</style>
+
+<body id="bgIMGgorgerPW">
+
+	<div class="container-fluid">
+		<div class="fade show active  was-validated container col-lg-6">
+			<header class="navbar navbar-dark bg-dark navbar-expand mt-5  " style="opacity: 0.9 !important;">
+				<!--导航栏导航-->
+				<a class="text-white" href="http://127.0.0.1:5500/logIn/logIn.html">返回</a>
+			</header>
+			<form class="p-3 bg-light " style="opacity: 0.9 !important;">
+				<!-- 头部提示信息 -->
+				<div class="ml-3 ">
+					<h2 class="">忘记密码</h2>
+				</div>
+				<div class="form-row ml-3  ">
+					<div class="from-group col-md-6  col-lg-8 offset-lg-2 p-2">
+						<label for="titlle">手机号 :</label>
+						<input required type="text" maxlength="11"
+							class="inputRegister" placeholder="请输入学员手机号码" id="s_phone" />
+						<div class="text-danger ml-3 fade" id="phoneerror" style="font-size: 80%;">456</div>
+					</div>
+
+					<div class="from-group col-md-6 col-lg-8 offset-lg-2 p-2">
+						<span for="titlle">验证码 :</span>
+						<input required type="text" class=" inputRegister " id="yzm" placeholder="" />
+						<!-- 	<div class="invalid-feedback">请填写验证码</div> -->
+						<button type="button" class="btn btn-light btn-outline-dark mt-2 " id="Houqu"
+							style="font-size: 10px;">获取验证码</button>
+							<div class="text-danger ml-3 fade" id="yzerror" style="font-size: 80%;">456</div>
+					</div>
+
+					<div class="from-group col-md-6 col-lg-8 offset-lg-2 p-2">
+						<label for="titlle">密码 :</label>
+						<input required type="password" pattern="^[a-zA-Z0-9]\w{5,8}$" maxlength="9"
+							class=" inputRegister" placeholder="请设置新的登录密码" id="paw2" />
+						<div class="invalid-feedback ml-3">请输入6-9位数字或英文密码</div>
+					</div>
+
+					<div class="from-group col-12 p-2  text-center"">
+						<button type=" button" class="btn btn-light btn-outline-dark col-3
+							style=" width: 150px; margin-left: 250px;" id="next2">确认</button>
+					</div>
+				</div>
+			</form>
+		</div>
+</body>
+
+
+<script src="../js/jquery-3.6.0.min.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+<script src="../js/skatingForget.Ajax.js"></script>
+
+
+</html>
